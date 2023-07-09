@@ -1,0 +1,31 @@
+/*muestra Productos*/
+.produc {
+    background-image: url(../multimedia/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 70%;
+        margin: 50px;
+        border: 1px solid#bab3aa;
+
+        h3 {
+            font-size: 1.7rem;
+            color: $marron;
+        }
+
+        p{
+            font-size: 1.1rem;
+            color:$marron;
+        }
+    }
+    .produc img{
+        width: 100%;
+    }
+}

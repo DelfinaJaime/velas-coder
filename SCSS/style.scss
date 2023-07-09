@@ -1,0 +1,45 @@
+
+@import "utilidades/variables.scss";
+@import "utilidades/_headeryfooter.scss";
+@import "paginas/cuidados.scss";
+@import "paginas/contacto.scss";
+@import "paginas/fragancias.scss";
+@import "paginas/productos.scss";
+@import "paginas/index.scss";
+
+
+
+* {
+    font-family: $fuentes;
+    color: $marron;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-decoration: none;
+    font-size: 3rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid $marron;
+    font-family: $fuentes;
+    color: $marron;
+
+    &:hover {
+        background-color: $marron;
+        border-color: $marron;
+    }
+
+    &:active {
+        background-color: $marron;
+        border-color: $marron;
+    }
+}
+
+@import "utilidades/mediaq.scss";

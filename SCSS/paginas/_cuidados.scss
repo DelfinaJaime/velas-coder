@@ -1,0 +1,38 @@
+/*Cuidados*/
+.tips{
+    background-image: url(../multimedia/banner.jpg);
+    background-size:cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    .cuidadosFlex {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        ul{
+            width: 60%;
+            text-align: justify;
+        }
+
+        li{
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+        }
+
+        p{
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+        }
+        
+        iframe{
+            width: 500px;
+            height: 300px;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+    }
+}
