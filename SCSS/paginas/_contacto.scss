@@ -1,37 +1,37 @@
-.formulario{
-    background-image: url(../multimedia/banner.jpg);
-    background-size:cover;
-    background-position: right;
-    background-repeat: no-repeat;
-
-    p{
+.formulario {
+    @include fondo(url(../multimedia/banner.jpg),cover,right,no-repeat);
+    p {
         padding-bottom: 15px;
         padding-left: 50px;
     }
 
-    .contacFlex{
+    .contacFlex {
         display: flex;
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center);
         padding: 10px 10px 25px;
-    
-        form{
+
+        form {
             border: 2px solid #ab9b8a;
             display: flex;
-            flex-direction: column;
-            align-items:flex-start;
-            padding: 15px;
+            @include flex(column,center,center);
+            padding:20px;
         }
 
-        p{
-            padding: 0;
+        label{
+            padding: 10px;
+        }
+        p {
+            padding: 5px;
         }
     }
-    input, textarea, select, button {
-        width : 300px;
+
+    input,
+    textarea,
+    select,
+    button {
+        width: 300px;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-    }    
+    }
 }

@@ -1,74 +1,91 @@
 /*aromas Fragancias*/
 
-.fragancia-grid{
-    background-image: url(../multimedia/banner.jpg);
-    background-size:cover;
-    background-position: right;
-    background-repeat: no-repeat;
+.fragancia-grid {
+    @include fondo(url(../multimedia/banner.jpg),cover,right,no-repeat);
     display: grid;
-    grid-template-areas: 
-    "h1 h1  h1  h1"
-    "h2 h2  h2  h2"
-    "img1 cuadro1  img2 cuadro2"
-    "img3 cuadro3 img4 cuadro4";
-    grid-template-columns: repeat(4,20%);
-    grid-template-rows: 80px 80px 250px 250px;
-    justify-content: center;
+    grid-template-areas:
+        "h1 h1  h1  h1"
+        "h2 h2  h2  h2"
+        "img1 cuadro1  img2 cuadro2"
+        "img3 cuadro3 img4 cuadro4"
+        "img5 cuadro5 img6 cuadro6";
+    grid-template-columns:15% auto 15% auto;
+    grid-template-rows: repeat(2, 80px) repeat(3,300px);
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
 
-    img{
-        width: 150px;
-        height: 150px;
+    img {
+        width: 100%;
     }
 
-    p{
+    p {
         width: 300px;
         text-align: center;
         padding: 10px;
     }
 
-    div{
+    div {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        @include flex(column,center,center);
+
     }
 
-    h1{
+    h1 {
         grid-area: h1;
-        justify-self:left;
-        padding: 0;
+        justify-self: left;
+        padding-top: 15px;
     }
 
-    h2{
+    h2 {
         grid-area: h2;
         text-align: center;
         font-size: 2rem;
     }
-    .grid-img-1{
+
+    .grid-img-1 {
         grid-area: img1;
     }
+
     .grid-1 {
-        grid-area: cuadro1;   
+        grid-area: cuadro1;
     }
-    .grid-img-2{
+
+    .grid-img-2 {
         grid-area: img2;
     }
-    .grid-2{
+
+    .grid-2 {
         grid-area: cuadro2;
     }
-    .grid-img-3{
+
+    .grid-img-3 {
         grid-area: img3;
     }
-    .grid-3{
+
+    .grid-3 {
         grid-area: cuadro3;
     }
-    .grid-img-4{
+
+    .grid-img-4 {
         grid-area: img4;
     }
-    .grid-4{
-        grid-area:  cuadro4;
+
+    .grid-4 {
+        grid-area: cuadro4;
+    }
+    .grid-img-5 {
+        grid-area: img5;
+    }
+
+    .grid-5 {
+        grid-area: cuadro5;
+    }
+    .grid-img-6 {
+        grid-area: img6;
+    }
+
+    .grid-6 {
+        grid-area: cuadro6;
     }
 }

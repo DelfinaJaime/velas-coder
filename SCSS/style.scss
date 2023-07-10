@@ -1,13 +1,7 @@
 
 @import "utilidades/variables.scss";
-@import "utilidades/_headeryfooter.scss";
-@import "paginas/cuidados.scss";
-@import "paginas/contacto.scss";
-@import "paginas/fragancias.scss";
-@import "paginas/productos.scss";
-@import "paginas/index.scss";
 
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 * {
     font-family: $fuentes;
@@ -41,5 +35,16 @@ h1 {
         border-color: $marron;
     }
 }
+
+@import "utilidades/_headeryfooter.scss";
+@import "paginas/index.scss";
+@import "paginas/productos.scss";
+@import "paginas/fragancias.scss";
+@import "paginas/cuidados.scss";
+@import "paginas/contacto.scss";
+
+
+
+
 
 @import "utilidades/mediaq.scss";

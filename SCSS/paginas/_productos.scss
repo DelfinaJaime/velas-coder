@@ -1,9 +1,6 @@
 /*muestra Productos*/
 .produc {
-    background-image: url(../multimedia/banner.jpg);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
+    @include fondo(url(../multimedia/banner.jpg),cover,right,no-repeat);
 
     h2 {
         text-align: center;
@@ -20,12 +17,13 @@
             color: $marron;
         }
 
-        p{
+        p {
             font-size: 1.1rem;
-            color:$marron;
+            color: $marron;
         }
     }
-    .produc img{
+
+    .produc img {
         width: 100%;
     }
 }
