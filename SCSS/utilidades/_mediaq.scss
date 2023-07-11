@@ -3,6 +3,7 @@
 
     header {
         flex-direction: column;
+        align-items: center;
 
         nav {
             width: 100%;
@@ -15,8 +16,8 @@
         }
 
         img {
-            margin: 0;
-            margin-top: 15px;
+            width: 20%;
+            padding-left: 0;
         }
     }
 
@@ -26,87 +27,90 @@
     .banner {
 
         h1 {
-            font-size: 3.3rem;
-            padding: 0;
             padding-top: 10px;
             padding-bottom: 10px;
             font-size: 3.3rem;
         }
 
         h2 {
-            padding: 0;
             padding-bottom: 10px;
         }
 
         h3 {
-            width: 90%;
-            text-align: center;
-            padding-left: 20px;
-            font-size: 1.3rem;
+            width: 100%;
+            text-align: justify;
+            padding-right: 10%;
+            padding-left: 10%;
+            font-size: 1rem;
+            line-height: 30px;
         }
 
         img {
-            width: 160px;
+            width: 50%;
+            margin: 2%;
         }
 
         .imagen-banner {
-            padding: 0;
             padding: 30px;
         }
     }
 
     /*DATOS*/
-    .datos img {
-        width: 60px;
-        padding-left: 20px;
+    .datos {
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        img {
+            width: 40%;
+            padding-left: 20px;
+        }
     }
 
     /*INFO*/
     .info {
-        padding: 0;
-        padding: 30px 30px;
+        padding: 8%;
         flex-direction: column;
 
         .text-info {
-            width: 80%;
+            width: 100%;
             text-align: justify;
             padding-bottom: 20px;
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            ul {
+
+                font-size: 0.9rem;
+            }
         }
     }
 
 
     /*---------------PRODUCTOS---------------*/
-
-    .producGrid {
-        grid-template-areas:
-            "h1 h1"
-            "h2 h2"
-            "prod1 prod2"
-            "prod3 prod4"
-            "prod5 prod6";
-        grid-template-columns: 240px 240px;
-        grid-template-rows: 70px 70px repeat(3, 250px);
-        gap: 0;
-
+    .produc {
+        padding:5%;
         h1 {
-            justify-self: center;
-            padding: 0;
             padding-top: 10px;
             font-size: 3.3rem;
+            text-align: center;
         }
 
         h2 {
             font-size: 1rem;
-            padding: 10px 10px;
-        }
-
-        img {
-            width: 150px;
+            text-align: justify;
+            line-height: 30px;
         }
 
         p {
             text-align: center;
             font-size: 1rem;
+        }
+        .card{
+            width: 50%;
         }
     }
 
@@ -119,30 +123,33 @@
             "img1 cuadro1"
             "img2 cuadro2"
             "img3 cuadro3"
-            "img4 cuadro4";
-        grid-template-columns: 200px 280px;
-        grid-template-rows: 70px 70px repeat(4, 200px);
+            "img4 cuadro4"
+            "img5 cuadro5"
+            "img6 cuadro6";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 70px 100px repeat(6, auto);
+        padding-right: 10%;
 
         h1 {
-            justify-self: center;
-            padding: 0;
             padding-top: 10px;
             font-size: 3.3rem;
+            justify-self: center;
         }
 
         h2 {
             font-size: 1rem;
-            padding: 10px 10px;
+            padding-right: 10%;
+            padding-left: 10%;
+            text-align: justify;
         }
 
         img {
-            width: 150px;
-            justify-items: right;
-            padding-left: 80px;
+            width:100%;
+            padding-left: 10%;
         }
 
         p {
-            width: 60%;
+            width: 100%;
         }
 
         div {
@@ -154,17 +161,17 @@
     .tips {
         h1 {
             text-align: center;
-            padding: 0;
             padding-top: 10px;
             font-size: 3.3rem;
         }
 
-        .cuidadosFlex{
-            ul{
+        .cuidadosFlex {
+            ul {
                 width: 80%;
             }
-            iframe{
-                width:400px;
+
+            iframe {
+                width: 400px;
                 height: 220px;
             }
         }
@@ -172,23 +179,31 @@
 
     /*---------------CONTACTO---------------*/
 
-    .formulario h1{
+    .formulario{
+         h1 {
         text-align: center;
-        padding: 0;
         padding-top: 10px;
         font-size: 3.3rem;
+        }
+        p{
+            text-align: justify;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
     }
 
     /*---------------FOOTER---------------*/
-    footer{
-        div{
+    footer {
+        div {
             flex-direction: column;
             align-items: center;
         }
-        img{
+
+        img {
             padding: 10px 10px;
         }
-        .imagen-efec img{
+
+        .imagen-efec img {
             padding-top: 0;
         }
     }

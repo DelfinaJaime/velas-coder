@@ -7,7 +7,7 @@
 
     h1 {
         padding: 20px;
-        font-size: 4rem;
+        font-size: 4.7rem;
         text-align: center;
     }
 
@@ -15,8 +15,19 @@
         padding-bottom: 30px;
     }
 
+    h3{
+        font-size: 1.4rem;
+        padding-right: 15%;
+        padding-left: 15%;
+        line-height:50px;
+        text-shadow: 4px 4px 30px rgba(125,97,80,1);
+
+
+
+
+    }
     img {
-        width: 250px;
+        width: 300px;
         box-shadow: 1px -2px 23px 2px rgba(181, 181, 181, 0.75);
         -webkit-box-shadow: 1px -2px 23px 2px rgba(181, 181, 181, 0.75);
         -moz-box-shadow: 1px -2px 23px 2px rgba(181, 181, 181, 0.75);
@@ -29,7 +40,7 @@
     .imagen-banner {
         padding: 50px;
         display: flex;
-        @include flex(row,space-around,center);
+        @include flex(row,space-evenly,center);
     }
 }
 
@@ -79,11 +90,15 @@
     .text-info {
         width: 60%;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        line-height: 30px;
+
+
 
         p {
             padding-bottom: 10px;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            line-height: 30px;
         }
 
         ul {

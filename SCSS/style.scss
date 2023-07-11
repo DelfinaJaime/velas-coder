@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+
+
 * {
     font-family: $fuentes;
     color: $marron;
@@ -17,24 +19,19 @@ h1 {
     padding-bottom: 10px;
     padding-left: 50px;
     text-align: left;
+    animation-name: cambio_color;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
-
-.btn {
-    background: transparent;
-    border: 1px solid $marron;
-    font-family: $fuentes;
-    color: $marron;
-
-    &:hover {
-        background-color: $marron;
-        border-color: $marron;
-    }
-
-    &:active {
-        background-color: $marron;
-        border-color: $marron;
+@keyframes cambio_color {
+    50%{
+        text-shadow: 4px 2px 8px rgba(72,58,51,0.81);
     }
 }
+
+
+
 
 @import "utilidades/_headeryfooter.scss";
 @import "paginas/index.scss";
